@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CateringBookingActivity">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/packageNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Package Name"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pricePerPlateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price per plate: ₹0"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/dishesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dishes list"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/guestCountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter guest count"
+                android:inputType="number"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Date Picker Button -->
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Event Date"
+                android:backgroundTint="#FFD700"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <!-- Show Selected Date -->
+            <TextView
+                android:id="@+id/selectedDateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Date: Not chosen"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate Total Bill"
+                android:backgroundTint="#FFD700"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/totalBillText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Bill: ₹0"
+                android:textSize="18sp"
+                android:textColor="#FF5722"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Booking"
+                android:backgroundTint="#FFD700"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:contentDescription="Home"/>
+
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/pro"
+            android:contentDescription="Profile"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/navSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/set"
+                android:contentDescription="Settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

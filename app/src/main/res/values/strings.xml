@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Wedway 2.0</string>
+
+    <!-- Titles and Labels -->
+    <string name="title_wedding_type">Wedding Type Details</string>
+    <string name="subtitle_wedding_type">Select the wedding type and details</string>
+    <string name="label_region">Region</string>
+    <string name="label_religion">Religion</string>
+    <string name="label_guests">Number of Guests</string>
+    <string name="label_city">Location</string>
+    <string name="btn_next">Next</string>
+    <string name="toast_saved">Saved Details</string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_decor_booking">Decor Booking</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_budget_planner">Wedding Budget Planner</string>
+    <string name="title_cake_order">Cake Order</string>
+    <string name="title_chatbot">Wedding Chatbot</string>
+
+    <!-- Region Options -->
+    <string-array name="region_options">
+        <item>South Indian</item>
+        <item>North Indian</item>
+    </string-array>
+
+    <!-- Religion Options -->
+    <string-array name="religion_options">
+        <item>Hindu</item>
+        <item>Christian</item>
+        <item>Muslim</item>
+    </string-array>
+
+    <!-- Guest Options -->
+    <string-array name="guest_options">
+        <item>Below 500</item>
+        <item>500 to 1000</item>
+        <item>Above 1000</item>
+    </string-array>
+
+    <!-- City Options (Tamil Nadu) -->
+    <string-array name="city_options">
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Madurai</item>
+        <item>Salem</item>
+        <item>Erode</item>
+        <item>Tirunelveli</item>
+        <item>Vellore</item>
+        <item>Tuticorin</item>
+        <item>Nagercoil</item>
+    </string-array>
+
+    <!-- Cake Options -->
+    <string-array name="cake_flavor_options">
+        <item>Chocolate</item>
+        <item>Vanilla</item>
+        <item>Red Velvet</item>
+        <item>Strawberry</item>
+        <item>Butterscotch</item>
+        <item>Chocotruffle</item>
+        <item>Blackcurrent</item>
+    </string-array>
+
+    <string-array name="cake_size_options">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+
+    <string-array name="return_gift_options">
+        <item>Keychain</item>
+        <item>Candle Set</item>
+        <item>Chocolate Box</item>
+        <item>Mini Plant</item>
+        <item>Photo Frame</item>
+        <item>Handmade Soap</item>
+        <item>Notebook</item>
+    </string-array>
+
+
+</resources>

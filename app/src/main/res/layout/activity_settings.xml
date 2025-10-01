@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/back_arrow"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Settings"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Checklist -->
+    <Button
+        android:id="@+id/btnChecklist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📋 Checklist"
+        android:backgroundTint="#FFD600"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvSettingsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Budget -->
+    <Button
+        android:id="@+id/btnBudget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="💰 Budget"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnChecklist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Chatbot -->
+    <Button
+        android:id="@+id/btnChatbot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🤖 Chatbot"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnBudget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Profile -->
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="👤 Profile"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnChatbot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Add Guest -->
+    <Button
+        android:id="@+id/btnAddGuest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="➕ Add Guest"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Notes -->
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="📝 Notes"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnAddGuest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Vendors -->
+    <Button
+        android:id="@+id/btnVendors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🏢 Vendors"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnNotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Task Scheduler Button (fixed position) -->
+    <Button
+        android:id="@+id/btnTaskScheduler"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="⏱️ Task Scheduler"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnVendors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Logout -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🚪 Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnTaskScheduler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:contentDescription="Home" />
+
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/pro"
+            android:contentDescription="Profile" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/navSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/set"
+                android:contentDescription="Settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".VendorsActivity">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/back_arrow"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvVendorsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛍️ Vendors"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Venue Button -->
+    <Button
+        android:id="@+id/btnVenue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🏛️ Venue"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/tvVendorsTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Catering Button -->
+    <Button
+        android:id="@+id/btnCatering"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🍽️ Catering"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnVenue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Music Button -->
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🎵 Music"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnCatering"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Decor Button -->
+    <Button
+        android:id="@+id/btnDecor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🎨 Decor"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Invitations Button -->
+    <Button
+        android:id="@+id/btnInvitation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="💌 Invitations"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnDecor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Cake Button -->
+    <Button
+        android:id="@+id/btnCake"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🍰 Cake"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnInvitation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Return Gifts Button -->
+    <Button
+        android:id="@+id/btnReturnGifts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="🎁 Return Gifts"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFD600"
+        app:layout_constraintTop_toBottomOf="@id/btnCake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/home"
+            android:contentDescription="Home" />
+
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/pro"
+            android:contentDescription="Profile" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/navSettings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/set"
+                android:contentDescription="Settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
