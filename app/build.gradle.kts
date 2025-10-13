@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.yourapp"
+    namespace = "com.simats.wedway"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.yourapp"
+        applicationId = "com.simats.yourapp"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     kapt("com.github.bumptech.glide:compiler:4.16.0")
     implementation ("androidx.recyclerview:recyclerview:1.3.0")
+    implementation("com.android.billingclient:billing-ktx:6.1.0")
 
 
     // Testing
